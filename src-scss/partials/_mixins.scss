@@ -22,4 +22,10 @@
 
 @mixin padding-left-subtitulos {
     padding-left: 200px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 3rem; /*48px*/
+}
+
+@mixin assets-especiales {
+    width: 10%;
 }

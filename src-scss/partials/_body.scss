@@ -52,3 +52,28 @@ h1 {
     background-image: linear-gradient(225deg, #0000FE, #00F0B8);
     transition: 0.5s ease;
 }
+.contenedor2 {
+    position: relative;
+    margin-top: 3%;
+}
+.box1 {
+    background-image: linear-gradient(#0000FF, #0000A3);
+    width: 100%;
+    height: 140vh;
+    transform: skew(0, -5deg);
+    position: absolute;
+}
+.episodios {
+    position: relative;
+    top: 80px;
+}
+.episodios h2 {
+    @include padding-left-subtitulos;
+    color: white;
+}
+.img-iframes{
+    text-align: center;
+}
+.img-iframes img {
+    @include tamaño-iframe-images;
+}
