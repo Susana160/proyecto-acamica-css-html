@@ -1,0 +1,25 @@
+@mixin lista-sin-bullets {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@mixin tamaño-iframe-images {
+    width: 533px;
+    height: 210px;
+    padding: 30px;
+}
+
+@mixin phone-size {
+    width: 457.6px;
+    height: 660px;
+} 
+
+@mixin tamaño-imgages-invitadas {
+    width: 440px;
+    height: 334px;
+}
+
+@mixin padding-left-subtitulos {
+    padding-left: 200px;
+}
