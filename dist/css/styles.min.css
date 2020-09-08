@@ -91,11 +91,6 @@ h1 {
 }
 
 /*Incio estilos contenedor 2*/
-.contenedor2 {
-  position: relative;
-  margin-top: 3%;
-}
-
 .box1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background-image: linear-gradient(#0000FF, #0000A3);
@@ -106,12 +101,29 @@ h1 {
   position: absolute;
 }
 
-.episodios {
+.contenedor2 {
+  position: relative;
+  margin-top: 3%;
+}
+
+/*Inicio flexbox para el contenedor*/
+.contenedor2 .flex-container {
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.episodios .flex-container {
   position: relative;
   top: 80px;
 }
 
 .episodios h2 {
+  position: relative;
+  top: 90px;
   padding-left: 200px;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 3rem;
@@ -119,14 +131,10 @@ h1 {
   color: white;
 }
 
-.img-iframes {
-  text-align: center;
-}
-
 .img-iframes img {
   width: 533px;
   height: 210px;
-  padding: 30px;
+  padding-bottom: 5%;
 }
 
 nav .principal-nav ul {

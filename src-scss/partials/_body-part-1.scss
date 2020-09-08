@@ -69,10 +69,6 @@ h1 {
 }
 
 /*Incio estilos contenedor 2*/
-.contenedor2 {
-    position: relative;
-    margin-top: 3%;
-}
 .box1 {
     background-image: linear-gradient(#0000FF, #0000A3);
     width: 100%;
@@ -80,17 +76,31 @@ h1 {
     transform: skew(0, -5deg);
     position: absolute;
 }
-.episodios {
+
+.contenedor2 {
+    position: relative;
+    margin-top: 3%;
+}
+
+/*Inicio flexbox para el contenedor*/
+.contenedor2 .flex-container {
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.episodios .flex-container{
     position: relative;
     top: 80px;
 }
+
 .episodios h2 {
+    position: relative;
+    top: 90px;
     @include padding-left-subtitulos;
     color: white;
 }
-.img-iframes{
-    text-align: center;
-}
+
 .img-iframes img {
-    @include tamaño-iframe-images;
+   @include tamaño-iframe-images;
 }
