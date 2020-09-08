@@ -353,6 +353,20 @@ nav .principal-nav ul {
     position: absolute;
 }*/
 .footer {
-  clear: both;
+  position: relative;
+  bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer div {
+  font-family: "IBM Plex Mono", monospace;
 }
 /*# sourceMappingURL=styles.min.css.map */
