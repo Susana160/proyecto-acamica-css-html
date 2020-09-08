@@ -11,8 +11,9 @@
 }
 
 @mixin phone-size {
-    width: 457.6px;
-    height: 660px;
+    width: 0.44%;
+    height: 0.66%;
+    margin-right: 4.3%;
 } 
 
 @mixin tamaño-imgages-invitadas {
@@ -26,6 +27,15 @@
     font-size: 3rem; /*48px*/
 }
 
+@mixin normal-subtitulos {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 3rem; /*48px*/
+}
+
+@mixin padding-parrafo {
+    padding-right: 10%;
+}
+
 @mixin assets-especiales {
-    width: 10%;
+    // width: 10%;
 }

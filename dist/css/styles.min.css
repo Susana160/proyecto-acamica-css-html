@@ -189,34 +189,43 @@ nav .principal-nav ul {
   margin-top: 10%;
 }
 
+.contenedor3 .flex-container-section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .phone {
-  width: 457.6px;
-  height: 660px;
-  float: left;
-  padding: 5%;
+  width: 0.44%;
+  height: 0.66%;
+  margin-right: 4.3%;
 }
 
 .parrafo-contenedor3 h2 {
-  padding-left: 200px;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 3rem;
   /*48px*/
 }
 
 .parrafo-contenedor3 {
-  position: relative;
-  top: 200px;
-  width: 68%;
-  margin-left: 20.5%;
   font-family: "IBM Plex Mono", monospace;
   font-size: 1rem;
-  line-height: 150%;
-  vertical-align: bottom;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 10%;
 }
 
+/*Inicio de estilos contenedor 4*/
 .contenedor4 {
   clear: both;
-  margin-top: 40%;
+  margin-top: 1.6%;
 }
 
 .contenedor4 h2 {
@@ -243,8 +252,18 @@ nav .principal-nav ul {
   width: 33.32vw;
 }
 
+/*Incio estilos contenedor 5*/
 .contenedor5 {
-  float: left;
+  margin-bottom: 10%;
+}
+
+.flex-container-section5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 13.9%;
 }
 
 .contenedor5 h2 {
@@ -254,18 +273,11 @@ nav .principal-nav ul {
   /*48px*/
 }
 
-.assets-topicos {
-  width: 200%;
-  margin-left: 19%;
-}
-
+/*Alineación de assets con los p*/
 .contenedor5 div .assets {
-  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
-}
-
-.assets {
-  padding: 5%;
 }
 
 .assets p {
@@ -273,18 +285,14 @@ nav .principal-nav ul {
   text-align: center;
 }
 
-.assets-especiales {
-  width: 10%;
-}
-
-.contenedor6 {
-  clear: both;
-}
-
+/*Inicio estilos contenedor 6*/
 .contenedor6 h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
   position: relative;
-  top: 50px;
+  bottom: 80px;
   padding-left: 200px;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 3rem;

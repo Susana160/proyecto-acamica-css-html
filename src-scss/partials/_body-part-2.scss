@@ -1,28 +1,37 @@
-.contenedor3{
+.contenedor3 {
     position: relative;
     margin-top: 10%;
 }
+
+.contenedor3 .flex-container-section3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 .phone {
     @include phone-size;
-    float: left;
-    padding: 5%;
 }
-.parrafo-contenedor3 h2{
-    @include padding-left-subtitulos;
+.parrafo-contenedor3 h2 {
+    @include normal-subtitulos;
 }
-.parrafo-contenedor3 {
-    position: relative;
-    top: 200px;
-    width: 68%;
-    margin-left: 20.5%;
+.parrafo-contenedor3{
+//     position: relative;
+//     top: 200px;
+//     width: 68%;
     font-family: $normal-font-family;
     font-size: $font-size-parrafos;
-    line-height: 150%;
-    vertical-align: bottom;
+    align-items: center;
+    @include padding-parrafo;
+//     line-height: 150%;
+//     vertical-align: bottom;
 }
+
+/*Inicio de estilos contenedor 4*/
 .contenedor4 {
     clear: both;
-    margin-top: 40%;
+    margin-top: 1.6%;
 }
 .contenedor4 h2 {
     @include padding-left-subtitulos;
@@ -40,38 +49,105 @@
 .grids img{
     width: 33.32vw;
 }
-.contenedor5{
-    float: left;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Incio estilos contenedor 5*/
+.contenedor5 {
+    margin-bottom: 10%;
 }
+.flex-container-section5 {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 13.9%;
+}
+
+// .contenedor5 .flex-container-section5 {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
 .contenedor5 h2{
     @include padding-left-subtitulos;
 }
-.assets-topicos{
-    width: 200%;
-    margin-left: 19%;
-}
+// .assets-topicos{
+//     width: 200%;
+//     margin-left: 19%;
+// }
+
+/*Alineación de assets con los p*/
 .contenedor5 div .assets {
-    display: inline-block;
+    box-sizing: border-box;
     text-align: center;
 }
-.assets{
-    padding: 5%;
-}
+// .assets{
+//     padding: 5%;
+// }
 .assets p {
     font-family: $some-font-family;
     text-align: center;
 }
-.assets-especiales {
-    @include assets-especiales;
-}
+// .assets-especiales {
+//     @include assets-especiales;
+// }
 
-.contenedor6{
-    clear: both;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Inicio estilos contenedor 6*/
+// .contenedor6{
+//     clear: both;
+// }
 .contenedor6 h2 {
+    display: flex;
     margin: 0;
     position: relative;
-    top: 50px;
+    bottom: 80px;
     @include padding-left-subtitulos;
     color: white;
 }
