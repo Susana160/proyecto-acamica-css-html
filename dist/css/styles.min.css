@@ -434,4 +434,13 @@ nav .principal-nav ul {
 .footer div {
   font-family: "IBM Plex Mono", monospace;
 }
+
+.redesSociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 /*# sourceMappingURL=styles.min.css.map */
