@@ -14,3 +14,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+.cadaRedSocial {
+    padding-right: 50px;
+}
+.cadaRedSocial:nth-last-child(1) {
+    padding: 0;
+}

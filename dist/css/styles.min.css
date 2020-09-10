@@ -7,6 +7,7 @@
 /*16px*/
 /*tamaño max-width*/
 /*Estilos particulares*/
+/*Parte del body con los contenedores desde el 1 hasta el 3*/
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
@@ -137,6 +138,44 @@ h1 {
   padding-bottom: 5%;
 }
 
+.contenedor3 {
+  position: relative;
+  margin-top: 10%;
+}
+
+.contenedor3 .flex-container-section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.phone {
+  width: 457.6px;
+  height: 660px;
+  margin-right: 4.3%;
+}
+
+.parrafo-contenedor3 h2 {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 3rem;
+  /*48px*/
+}
+
+.parrafo-contenedor3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 10%;
+}
+
 nav .principal-nav ul {
   padding: 0;
   margin: 0;
@@ -244,44 +283,7 @@ nav .principal-nav ul {
   opacity: 56%;
 }
 
-.contenedor3 {
-  position: relative;
-  margin-top: 10%;
-}
-
-.contenedor3 .flex-container-section3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.phone {
-  width: 457.6px;
-  height: 660px;
-  margin-right: 4.3%;
-}
-
-.parrafo-contenedor3 h2 {
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
-  font-size: 3rem;
-  /*48px*/
-}
-
-.parrafo-contenedor3 {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-right: 10%;
-}
-
+/*Parte del body con los contenedores desde el 4 hasta el 6*/
 /*Inicio de estilos contenedor 4*/
 .contenedor4 {
   margin-top: 1.6%;
@@ -442,5 +444,13 @@ nav .principal-nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.cadaRedSocial {
+  padding-right: 50px;
+}
+
+.cadaRedSocial:nth-last-child(1) {
+  padding: 0;
 }
 /*# sourceMappingURL=styles.min.css.map */

@@ -1,3 +1,4 @@
+/*Parte del body con los contenedores desde el 1 hasta el 3*/
 *::before,
 *::after {
     box-sizing: border-box;
@@ -111,4 +112,33 @@ h1 {
 
 .img-iframes img {
    @include tamaño-iframe-images;
+}
+.contenedor3 {
+    position: relative;
+    margin-top: 10%;
+}
+
+.contenedor3 .flex-container-section3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.phone {
+    @include phone-size;
+}
+.parrafo-contenedor3 h2 {
+    @include normal-subtitulos;
+}
+.parrafo-contenedor3{
+//     position: relative;
+//     top: 200px;
+//     width: 68%;
+    font-family: $normal-font-family;
+    font-size: $font-size-parrafos;
+    align-items: center;
+    @include padding-parrafo;
+//     line-height: 150%;
+//     vertical-align: bottom;
 }

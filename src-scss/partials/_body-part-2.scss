@@ -1,33 +1,4 @@
-.contenedor3 {
-    position: relative;
-    margin-top: 10%;
-}
-
-.contenedor3 .flex-container-section3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.phone {
-    @include phone-size;
-}
-.parrafo-contenedor3 h2 {
-    @include normal-subtitulos;
-}
-.parrafo-contenedor3{
-//     position: relative;
-//     top: 200px;
-//     width: 68%;
-    font-family: $normal-font-family;
-    font-size: $font-size-parrafos;
-    align-items: center;
-    @include padding-parrafo;
-//     line-height: 150%;
-//     vertical-align: bottom;
-}
-
+/*Parte del body con los contenedores desde el 4 hasta el 6*/
 /*Inicio de estilos contenedor 4*/
 .contenedor4 {
     margin-top: 1.6%;
