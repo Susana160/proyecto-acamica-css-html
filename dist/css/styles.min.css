@@ -326,9 +326,6 @@ h1 {
 }
 
 .contenedor5 .flex-container-section5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -342,8 +339,6 @@ h1 {
 
 /*Alineación de assets con los p*/
 .contenedor5 div .assets {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   text-align: center;
 }
 
