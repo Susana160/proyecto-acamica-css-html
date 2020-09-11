@@ -129,6 +129,7 @@ nav .principal-nav ul {
 body {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   color: #060A24;
+  margin-left: 0;
 }
 
 a {
