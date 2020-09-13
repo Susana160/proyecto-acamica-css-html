@@ -1,4 +1,4 @@
-/*Parte del body con los contenedores desde el 1 hasta el 3*/
+/********Parte del body con los contenedores desde el 1 hasta el 3*********/
 *::before,
 *::after {
     box-sizing: border-box;
@@ -133,9 +133,6 @@ h1 {
 /*Incio estilos contenedor 2*/
 .box1 {
     background-image: linear-gradient(#0000FF, #0000A3);
-    // width: 100%;
-    // height: 140vh;
-    // transform: skew(0, -5deg);
     position: absolute;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     padding-top: 50px;
@@ -230,22 +227,13 @@ h1 {
     @include normal-subtitulos;
 }
 .parrafo-contenedor3{
-//     position: relative;
-//     top: 200px;
-//     width: 68%;
     font-family: $normal-font-family;
     font-size: $font-size-parrafos;
     align-items: center;
     @include padding-parrafo;
 //     line-height: 150%;
-//     vertical-align: bottom;
 }
 
-// @media screen and (max-width: 1300px) {
-//     .contenedor3 {
-//         position: relative;
-//         margin-top: 70%;
-//     }
 
 @media screen and (max-width: 990px) {
     .contenedor3 {
