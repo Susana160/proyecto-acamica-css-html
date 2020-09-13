@@ -5,8 +5,14 @@
 }
 
 @mixin tamaño-iframe-images {
-    width: 533px;
+    width: 584px;
     height: 210px;
+    padding-bottom: 5%;
+}
+
+@mixin tamaño-iframe-images-mobile {
+    width: 298px;
+    height: 225px;
     padding-bottom: 5%;
 }
 
@@ -17,8 +23,8 @@
 } 
 
 @mixin tamaño-imgages-invitadas {
-    width: 440px;
-    height: 334px;
+    width: 480px;
+    height: 364px;
 }
 
 @mixin padding-left-subtitulos {
@@ -32,8 +38,13 @@
     font-size: 3rem; /*48px*/
 }
 
+@mixin subtitulos-mobile {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: $font-size-titulo-mobile;
+}
+
 @mixin padding-parrafo {
-    padding-right: 10%;
+    padding-right: 20%;
 }
 
 @mixin assets-especiales {

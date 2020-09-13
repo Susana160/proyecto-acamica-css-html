@@ -5,6 +5,9 @@
 /*64px*/
 /*48px*/
 /*16px*/
+/*Tamaño fuentes mobile*/
+/*36px*/
+/*14px*/
 /*tamaño max-width*/
 /*Estilos particulares*/
 nav .principal-nav ul {
@@ -199,15 +202,40 @@ h1 {
   transition: 1s ease;
 }
 
+@media screen and (max-width: 790px) {
+  body {
+    margin-left: 0;
+  }
+  .contenedor1 h1 {
+    margin: 0;
+    font-size: 2.25rem;
+  }
+  .parrafo1 {
+    padding-right: 2%;
+    margin-bottom: 3.5%;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.875rem;
+    text-align: justify;
+  }
+  .conoce_mas_boton {
+    background-color: #00F3BB;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1rem;
+    padding: 1% 30%;
+    border: 0;
+  }
+}
+
 /*Incio estilos contenedor 2*/
 .box1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background-image: linear-gradient(#0000FF, #0000A3);
-  width: 100%;
-  height: 140vh;
-  -webkit-transform: skew(0, -5deg);
-          transform: skew(0, -5deg);
   position: absolute;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  padding-top: 50px;
+  padding-bottom: 150px;
+  -webkit-clip-path: polygon(0 13%, 100% 0, 100% 87%, 0% 100%);
+          clip-path: polygon(0 13%, 100% 0, 100% 87%, 0% 100%);
 }
 
 .contenedor2 {
@@ -226,13 +254,12 @@ h1 {
 }
 
 .episodios .flex-container {
-  position: relative;
-  top: 80px;
+  top: 50px;
 }
 
 .episodios h2 {
   position: relative;
-  top: 90px;
+  top: 50px;
   padding-left: 200px;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 3rem;
@@ -241,14 +268,43 @@ h1 {
 }
 
 .img-iframes img {
-  width: 533px;
+  width: 584px;
   height: 210px;
   padding-bottom: 5%;
 }
 
+@media screen and (max-width: 990px) and (max-width: 985px) {
+  .box1 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
+    background-image: linear-gradient(#0000FF, #0000A3);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    padding-top: 50px;
+    padding-bottom: 150px;
+    -webkit-clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
+            clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
+  }
+  .episodios h2 {
+    padding-left: 0;
+    position: relative;
+    top: 50px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 2.25rem;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 990px) and (max-width: 985px) and (max-width: 640px) {
+  .img-iframes img {
+    width: 298px;
+    height: 225px;
+    padding-bottom: 5%;
+  }
+}
+
+/*Inicio estilos contenedor 3*/
 .contenedor3 {
   position: relative;
-  margin-top: 10%;
+  margin-top: 55%;
 }
 
 .contenedor3 .flex-container-section3 {
@@ -258,9 +314,6 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .phone {
@@ -281,7 +334,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 10%;
+  padding-right: 20%;
 }
 
 /*Parte del body con los contenedores desde el 4 hasta el 6*/
@@ -298,8 +351,8 @@ h1 {
 }
 
 .contenedor4 img {
-  width: 440px;
-  height: 334px;
+  width: 480px;
+  height: 364px;
 }
 
 .img-invitadas {
