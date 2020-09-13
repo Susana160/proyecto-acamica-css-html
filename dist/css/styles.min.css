@@ -337,6 +337,40 @@ h1 {
   padding-right: 20%;
 }
 
+@media screen and (max-width: 990px) {
+  .contenedor3 {
+    position: relative;
+    margin-top: 150%;
+  }
+  .contenedor3 .flex-container-section3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phone {
+    width: 360px;
+    height: 519px;
+  }
+  .parrafo-contenedor3 h2 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 2.25rem;
+  }
+  .parrafo-contenedor3 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.875rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 /*Parte del body con los contenedores desde el 4 hasta el 6*/
 /*Inicio de estilos contenedor 4*/
 .contenedor4 {

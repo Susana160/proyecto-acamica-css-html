@@ -22,6 +22,11 @@
     margin-right: 4.3%;
 } 
 
+@mixin phone-size-mobile {
+    width: 360px;
+    height: 519px;
+}
+
 @mixin tamaño-imgages-invitadas {
     width: 480px;
     height: 364px;
