@@ -5,6 +5,7 @@
 }
 
 @mixin tamaño-iframe-images {
+    max-width: 100%;
     width: 584px;
     height: 210px;
     padding-bottom: 5%;
