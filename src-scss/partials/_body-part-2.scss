@@ -26,7 +26,6 @@
     }
     .contenedor4 img {
         max-width: 100%;
-        @include tamaño-imgages-invitadas-mobile;
     }
 }
 
@@ -89,7 +88,9 @@
 @media screen and (max-width: 790px) {
     .contenedor5 h2{
         padding-left: 0;
-        @include subtitulos-mobile
+        @include subtitulos-mobile;
+        display: flex;
+        justify-content: center;
     }   
 }
 
@@ -171,3 +172,11 @@
     transform: skew(0, -4deg);
     position: absolute;
 }*/
+
+@media screen and (max-width: 990px) {
+    .contenedor6 h2 {
+        padding-left: 0;
+        @include subtitulos-mobile;
+        color: white;
+    }        
+}

@@ -145,6 +145,12 @@ a {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 990px) {
+  body {
+    margin-left: 0;
+  }
+}
+
 /*Estilos del contenedor 1*/
 .contenedor1 {
   padding-left: 100px;
@@ -268,6 +274,7 @@ h1 {
 }
 
 .img-iframes img {
+  max-width: 100%;
   width: 584px;
   height: 210px;
   padding-bottom: 5%;
@@ -412,6 +419,9 @@ h1 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .contenedor4 img {
+    max-width: 100%;
+  }
 }
 
 .contenedor5 {
@@ -450,6 +460,20 @@ h1 {
 }
 
 /*Inicio estilos contenedor 6*/
+@media screen and (max-width: 790px) {
+  .contenedor5 h2 {
+    padding-left: 0;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 2.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .box2 {
   position: relative;
   margin-top: 50px;
@@ -516,6 +540,15 @@ h1 {
     transform: skew(0, -4deg);
     position: absolute;
 }*/
+@media screen and (max-width: 990px) {
+  .contenedor6 h2 {
+    padding-left: 0;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 2.25rem;
+    color: white;
+  }
+}
+
 .footer {
   position: relative;
   bottom: 80px;
