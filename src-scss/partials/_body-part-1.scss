@@ -12,6 +12,7 @@ body {
     font-family: $principal-font-family;
     color: $principal-font-color;
     margin-left: 0;
+    box-sizing: border-box;
 }
 a {
     color: $principal-font-color;
@@ -20,98 +21,109 @@ a {
 
 
 .max-width {
-    max-width: $general-max-with;
+    max-width: 280px;
     margin: 0 auto;
 }
 
-@media screen and (max-width: 990px) {
-    body {
-        margin-left: 0;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*Estilos del contenedor 1*/
-.contenedor1 {
-    padding-left: 100px;
-    margin-top: 120px;
-    margin-bottom: 10px;
-    
-}
-
-/*Inicio de flexbox para contenedor 1*/
+/**********************ESTILOS GENERALES MOBILE********************/
+/*Inicio flexbox contenedor1*/
 .flex-container-section1 {
     display: flex;
-}
-
-.contenedor1 {
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
-/*Estilos de los elementos dentro del contenedor*/
-h1 {
-    margin: 0;
-    font-size: $font-size-titulo;
+/*Estilos h1 contenedor 1*/
+.contenedor1 h1 {
+    font-size: 2.25rem;
+    margin-bottom: 5%;
 }
 
+/*Tachado span h1*/
 .tachado {
     text-decoration: line-through;
 }
+
+/*Punto al final del h1*/
 .punto {
     color: #0000EC;
 }
+
+/*Estilos parrafo 1 contenedor 1*/
 .parrafo1{
-    padding-right: 42.5%;
-    margin-bottom: 3.5%;
+    margin-bottom: 10%;
     font-family: $normal-font-family;
-    font-size: 1rem;
+    font-size: $font-size-parrafos-mobile;
     text-align: justify;
 }
+
+/*Estilos botón contenedor 1*/
 .conoce_mas_boton{
     background-color: $botones-font-color;
     font-family: $normal-font-family;
-    font-size: 1.125rem;
-    padding: 1% 4.1%;
+    font-size: 1rem;
+    padding: 3% 30%;
     border: 0;
 }
+
+/*Hover boton*/
 .conoce_mas_boton:hover {
     background-image: linear-gradient(225deg, #0000FE, #00F0B8);
     transition: 1s ease;
 }
 
-@media screen and (max-width: 790px) {
-    body {
-        margin-left: 0;
+/*************ESTILOS PARA DESKTOP********************/
+@media screen and (min-width: 990px) {
+    /*Estilos del contenedor 1*/
+    .max-width {
+        max-width: 1200px;
     }
+
+    /*Estilos generales contenedor 1*/
+    .contenedor1 {
+        padding-left: 100px;
+        margin-top: 120px;
+        margin-bottom: 10px; 
+    }
+
+    /*Inicio de flexbox contenedor 1*/
+    .flex-container-section1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Estilos de los elementos dentro del contenedor*/
+    /*Estilos h1*/
     .contenedor1 h1 {
         margin: 0;
-        font-size: $font-size-titulo-mobile;
+        font-size: 4rem;
     }
+
+    /*Estilos parrafo 1 contenedor 1*/
     .parrafo1{
-        padding-right:2%;
+        padding-right: 42.5%;
         margin-bottom: 3.5%;
-        font-family: $normal-font-family;
-        font-size: $font-size-parrafos-mobile;
+        font-size: 1rem;
         text-align: justify;
     }
+
+    /*Estilos boton contenedor 1*/
     .conoce_mas_boton{
-        background-color: $botones-font-color;
-        font-family: $normal-font-family;
-        font-size: 1rem;
-        padding: 1% 30%;
+        font-size: 1.125rem;
+        padding: 1% 4.1%;
         border: 0;
     }
 }
+
+
+
+
+
+
+
+
+    
+
 
 
 
