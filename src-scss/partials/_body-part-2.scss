@@ -17,16 +17,30 @@
     justify-content: center;
 }
 
-// .grids{
-//     margin-left: -10px;
-//     display: grid;
-//     grid-template-columns: 33.33% 33.33% 33.33%;
-//     grid-template-rows: 1fr 1fr;
+@media screen and (max-width: 700px) {
+    .contenedor4 h2 {
+        padding-left: 0;
+        @include subtitulos-mobile;
+        display: flex;
+        justify-content: center;
+    }
+    .contenedor4 img {
+        max-width: 100%;
+        @include tamaño-imgages-invitadas-mobile;
+    }
+}
 
-// }
-// .grids img{
-//     width: 33.32vw;
-// }
+
+
+
+
+
+
+
+
+
+
+
 
 // /*Incio estilos contenedor 5*/
 .contenedor5 {
