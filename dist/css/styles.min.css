@@ -217,6 +217,7 @@ a {
   font-size: 1rem;
   padding: 3% 30%;
   border: 0;
+  margin-bottom: 10%;
 }
 
 /*Hover boton*/
@@ -269,79 +270,87 @@ a {
   }
 }
 
-/*Incio estilos contenedor 2*/
+/**********************ESTILOS GENERALES MOBILE********************/
+/*Inicio estilos contenedor 2*/
+/*Caja contenedora del contenedor 2 (box)*/
 .box1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background-image: linear-gradient(#0000FF, #0000A3);
-  position: absolute;
-  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   padding-top: 50px;
   padding-bottom: 150px;
-  -webkit-clip-path: polygon(0 13%, 100% 0, 100% 87%, 0% 100%);
-          clip-path: polygon(0 13%, 100% 0, 100% 87%, 0% 100%);
+  -webkit-clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
+          clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
 }
 
-.contenedor2 {
-  position: relative;
-  margin-top: 3%;
+/*Inicio flexbox contenedor 2*/
+.flex-container-section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-/*Inicio flexbox para el contenedor*/
-.contenedor2 .flex-container {
-  position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+/*Estilos contenedor 1: h2 - iframes*/
+.episodios {
+  max-width: 280px;
+  margin: 0 auto;
 }
 
-.episodios .flex-container {
-  top: 50px;
-}
-
+/*Estilos h2 contenedor 2*/
 .episodios h2 {
+  padding-left: 0;
   position: relative;
-  top: 50px;
-  padding-left: 200px;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
-  font-size: 3rem;
-  /*48px*/
+  font-size: 2.25rem;
   color: white;
 }
 
+/*Estilos iframes*/
 .img-iframes img {
-  max-width: 100%;
-  width: 584px;
-  height: 210px;
-  padding-bottom: 5%;
+  padding-bottom: 16px;
 }
 
-@media screen and (max-width: 990px) and (max-width: 985px) {
+/*************ESTILOS PARA DESKTOP********************/
+@media screen and (min-width: 990px) {
+  /*Incio estilos contenedor 2*/
   .box1 {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
     background-image: linear-gradient(#0000FF, #0000A3);
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    padding-top: 50px;
-    padding-bottom: 150px;
     -webkit-clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
             clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
+    margin-left: 0;
+  }
+  .contenedor2 {
+    position: relative;
+    margin-top: 3%;
+  }
+  /*Inicio flexbox para el contenedor*/
+  .episodios {
+    max-width: 1440px;
+    margin: 0 auto;
   }
   .episodios h2 {
-    padding-left: 0;
     position: relative;
-    top: 50px;
+    padding-left: 200px;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-size: 2.25rem;
+    font-size: 3rem;
+    /*48px*/
     color: white;
   }
-}
-
-@media screen and (max-width: 990px) and (max-width: 985px) and (max-width: 640px) {
-  .img-iframes img {
-    width: 298px;
-    height: 225px;
-    padding-bottom: 5%;
+  .img-iframes {
+    margin: 0;
+    width: 584px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .iframes {
+    padding-bottom: 30px;
   }
 }
 

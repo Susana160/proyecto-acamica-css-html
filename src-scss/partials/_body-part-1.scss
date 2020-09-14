@@ -64,6 +64,7 @@ a {
     font-size: 1rem;
     padding: 3% 30%;
     border: 0;
+    margin-bottom: 10%;
 }
 
 /*Hover boton*/
@@ -140,69 +141,84 @@ a {
 
 
 
-
-
-/*Incio estilos contenedor 2*/
+/**********************ESTILOS GENERALES MOBILE********************/
+/*Inicio estilos contenedor 2*/
+/*Caja contenedora del contenedor 2 (box)*/
 .box1 {
     background-image: linear-gradient(#0000FF, #0000A3);
-    position: absolute;
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     padding-top: 50px;
     padding-bottom: 150px;
-    clip-path: polygon(0 13%, 100% 0, 100% 87%, 0% 100%);
-  
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);   
 }
 
-.contenedor2 {
-    position: relative;
-    margin-top: 3%;
+/*Inicio flexbox contenedor 2*/
+.flex-container-section2 {
+    display: flex;
+    flex-direction: column;
 }
 
-/*Inicio flexbox para el contenedor*/
-.contenedor2 .flex-container {
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+/*Estilos contenedor 1: h2 - iframes*/
+.episodios {
+    max-width: 280px;
+    margin: 0 auto;
 }
 
-.episodios .flex-container{
-    top: 50px;
-}
-
+/*Estilos h2 contenedor 2*/
 .episodios h2 {
+    padding-left: 0;
     position: relative;
-    top: 50px;
-    @include padding-left-subtitulos;
+    @include subtitulos-mobile;
     color: white;
 }
 
+/*Estilos iframes*/
 .img-iframes img {
-   @include tamaño-iframe-images;
+    padding-bottom: 16px;
 }
 
-@media screen and (max-width: 990px) and (max-width: 985px) {
+/*************ESTILOS PARA DESKTOP********************/
+@media screen and (min-width: 990px) {
+    /*Incio estilos contenedor 2*/
     .box1 {
         background-image: linear-gradient(#0000FF, #0000A3);
-        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-        padding-top: 50px;
-        padding-bottom: 150px;
+        // padding-top: 50px;
+        // padding-bottom: 150px;
         clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);   
+        margin-left: 0;
+    }
+
+    .contenedor2 {
+        position: relative;
+        margin-top: 3%;
+    }   
+
+    /*Inicio flexbox para el contenedor*/
+
+    .episodios{
+        max-width: 1440px;
+        margin: 0 auto;
     }
 
     .episodios h2 {
-        padding-left: 0;
         position: relative;
-        top: 50px;
-        @include subtitulos-mobile;
+        @include padding-left-subtitulos;
         color: white;
     }
+
+    .img-iframes {
+        margin: 0;
+        width: 584px;
+        display: flex;
+        flex-wrap: wrap;
+    }
     
-    @media screen and (max-width: 640px){
-        .img-iframes img {
-        @include tamaño-iframe-images-mobile;
-         }
+
+    .iframes {
+        padding-bottom: 30px;
+
     }
 }
+
 
 
 
