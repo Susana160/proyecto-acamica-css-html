@@ -444,6 +444,9 @@ a {
 /*************ESTILOS PARA DESKTOP********************/
 @media screen and (min-width: 1000px) {
   /*Estilos generales contenedor 4*/
+  .max-width {
+    max-width: 1440px;
+  }
   .contenedor4 {
     margin-top: 1.6%;
   }
@@ -475,10 +478,12 @@ a {
   }
 }
 
+/*************ESTILOS PARA DESKTOP********************/
 .contenedor5 {
   margin-bottom: 10%;
 }
 
+/*Incio de flexbox contendor 5*/
 .flex-container-section5 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -493,6 +498,7 @@ a {
       flex-wrap: wrap;
 }
 
+/*Estilos h2 contenedor 5*/
 .contenedor5 h2 {
   padding-left: 200px;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -505,12 +511,15 @@ a {
   text-align: center;
 }
 
+/*Estilos y alineación de los p de los assets*/
 .assets p {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.5rem;
   text-align: center;
 }
 
+/**********************ESTILOS GENERALES MOBILE********************/
+/*Configuración flexbox contenedor 5*/
 @media screen and (max-width: 990px) {
   .contenedor5 .flex-container-section5 {
     -webkit-box-orient: vertical;
@@ -518,6 +527,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  /*Estilos h2 contenedor 5*/
   .contenedor5 h2 {
     padding-left: 0;
     display: -webkit-box;
@@ -529,45 +539,21 @@ a {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-size: 2.25rem;
   }
+  /*Font size de los p de los assets*/
   .assets p {
     font-size: 1.5rem;
   }
 }
 
+/**********************ESTILOS GENERALES MOBILE********************/
 .box2 {
-  position: relative;
-  margin-top: 50px;
-  padding-top: 50px;
-  padding-bottom: 80px;
-}
-
-.box2::before,
-.box2::after {
-  content: '';
+  -webkit-clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background-image: linear-gradient(#0000FF, #0000A3);
-  -webkit-transform: skewY(-10);
-          transform: skewY(-10);
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 250%;
 }
 
-.box2::before {
-  top: 10px;
-}
-
-.box2::after {
-  -webkit-transform: skewY(-3deg);
-          transform: skewY(-3deg);
-  top: -30px;
-  z-index: -1;
-}
-
-.contenedor6 .parrafo3 {
-  position: relative;
-  bottom: 60px;
+.flex-container-section6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,38 +566,53 @@ a {
           align-items: center;
 }
 
+.contenedor6 .parrafo3 {
+  position: relative;
+}
+
 .contenedor6 h2 {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
-  font-size: 3rem;
-  /*48px*/
+  font-size: 2.25rem;
   color: white;
+  margin-bottom: 15%;
+  text-align: center;
 }
 
 .segundoboton {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
-  bottom: 30px;
-  padding: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
-/*.box2{
+/*************ESTILOS PARA DESKTOP********************/
+@media screen and (min-width: 1000px) {
+  .box2 {
+    -webkit-clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
     background-image: linear-gradient(#0000FF, #0000A3);
-    width: 100%;
-    height: 50vh;
-    transform: skew(0, -4deg);
-    position: absolute;
-}*/
-@media screen and (max-width: 990px) {
+  }
+  .contenedor6 .parrafo3 {
+    position: relative;
+  }
   .contenedor6 h2 {
-    padding-left: 0;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-size: 2.25rem;
+    font-size: 3rem;
+    /*48px*/
     color: white;
+  }
+  .segundoboton {
+    position: relative;
+    bottom: 30px;
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 }
 
 .footer {
-  position: relative;
-  bottom: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,5 +643,14 @@ a {
 
 .cadaRedSocial:nth-last-child(1) {
   padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=styles.min.css.map */

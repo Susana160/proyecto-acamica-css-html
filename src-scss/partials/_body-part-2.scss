@@ -20,6 +20,9 @@
 /*************ESTILOS PARA DESKTOP********************/
 @media screen and (min-width: 1000px) {
     /*Estilos generales contenedor 4*/
+    .max-width {
+        max-width: 1440px;
+    }
     .contenedor4 {
         margin-top: 1.6%;
     }
@@ -54,11 +57,13 @@
 
 
 
-
+/*************ESTILOS PARA DESKTOP********************/
 // /*Incio estilos contenedor 5*/
 .contenedor5 {
     margin-bottom: 10%;
 }
+
+/*Incio de flexbox contendor 5*/
 .flex-container-section5 {
     display: flex;
     justify-content: space-around;
@@ -70,6 +75,7 @@
     flex-wrap: wrap;
 }   
 
+/*Estilos h2 contenedor 5*/
 .contenedor5 h2{
     @include padding-left-subtitulos;
 }
@@ -80,17 +86,21 @@
     text-align: center;
 }
 
+/*Estilos y alineación de los p de los assets*/
 .assets p {
     font-family: $some-font-family;
     font-size: 1.5rem;
     text-align: center;
 }
 
+/**********************ESTILOS GENERALES MOBILE********************/
+/*Configuración flexbox contenedor 5*/
 @media screen and (max-width: 990px) {
     .contenedor5 .flex-container-section5 {
         flex-direction: column;
     } 
 
+    /*Estilos h2 contenedor 5*/
     .contenedor5 h2{
         padding-left: 0;
         display: flex;
@@ -98,6 +108,7 @@
         @include subtitulos-mobile
     }
 
+    /*Font size de los p de los assets*/
     .assets p {
         font-size: 1.5rem;
     }
@@ -113,79 +124,65 @@
 
 
 
+
+/**********************ESTILOS GENERALES MOBILE********************/
 .box2 {
-    position: relative;
-    margin-top: 50px;
-    padding-top: 50px;
-    padding-bottom: 80px;
+    clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
+    background-image: linear-gradient(#0000FF, #0000A3);
 }
 
-.box2::before,
-.box2::after{
-    content: '';
-    background-image: $boxes-color;
-    transform: skewY(-10);
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 250%;
-}
-.box2::before{
-    top: 10px;
-}
-.box2::after{
-    transform: skewY(-3deg);
-    top: -30px;
-    z-index: -1;
-}
-
-.contenedor6 .parrafo3{
-    position: relative;
-    bottom: 60px;
+.flex-container-section6 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.contenedor6 .parrafo3{
+    position: relative;
+}
+
 .contenedor6 h2 {
-    // margin: 0;
-    // position: relative;
-    // bottom: 80px;
-    @include normal-subtitulos;
+    @include subtitulos-mobile;
     color: white;
+    margin-bottom:15%;
+    text-align: center;
 }
 
 .segundoboton {
+    justify-content: center;
     position: relative;
-    bottom: 30px;
-    padding: 5%;
-
-    // position: relative;
-    // font-family: $normal-font-family;
-    // font-size: 1.125rem;
-    // border: 0;
+    
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
-// .segundoboton:hover {
-//     background-image: linear-gradient(225deg, #0000FE, #00F0B8);
-//     transition: 1s ease;
-// }
+/*************ESTILOS PARA DESKTOP********************/
+@media screen and (min-width: 1000px) {
+    .box2 {
+        clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
+        background-image: linear-gradient(#0000FF, #0000A3);
+    }
+    
 
-
-
-
-/*.box2{
-    background-image: linear-gradient(#0000FF, #0000A3);
-    width: 100%;
-    height: 50vh;
-    transform: skew(0, -4deg);
-    position: absolute;
-}*/
-
-@media screen and (max-width: 990px) {
+    .contenedor6 .parrafo3{
+        position: relative;
+    }
+    
     .contenedor6 h2 {
-        padding-left: 0;
-        @include subtitulos-mobile;
+        @include normal-subtitulos;
         color: white;
-    }        
+    }
+    
+    .segundoboton {
+        position: relative;
+        bottom: 30px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
 }
+
+
+
+
+
+            
