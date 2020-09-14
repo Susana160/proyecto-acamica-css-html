@@ -55,10 +55,6 @@
 
 
 
-
-
-
-
 // /*Incio estilos contenedor 5*/
 .contenedor5 {
     margin-bottom: 10%;
@@ -72,44 +68,39 @@
 .contenedor5 .flex-container-section5 {
     // display: flex;
     flex-wrap: wrap;
-}
+}   
 
 .contenedor5 h2{
     @include padding-left-subtitulos;
 }
-// .assets-topicos{
-//     width: 200%;
-//     margin-left: 19%;
-// }
 
 /*Alineación de assets con los p*/
 .contenedor5 div .assets {
     // box-sizing: border-box;
     text-align: center;
 }
-// .assets{
-//     padding: 5%;
-// }
+
 .assets p {
     font-family: $some-font-family;
+    font-size: 1.5rem;
     text-align: center;
 }
-// .assets-especiales {
-//     @include assets-especiales;
-// }
 
-/*Inicio estilos contenedor 6*/
-// .contenedor6{
-//     clear: both;
-// }
+@media screen and (max-width: 990px) {
+    .contenedor5 .flex-container-section5 {
+        flex-direction: column;
+    } 
 
-@media screen and (max-width: 790px) {
     .contenedor5 h2{
         padding-left: 0;
-        @include subtitulos-mobile;
         display: flex;
         justify-content: center;
-    }   
+        @include subtitulos-mobile
+    }
+
+    .assets p {
+        font-size: 1.5rem;
+    }
 }
 
 
