@@ -215,7 +215,6 @@ a {
 
     .iframes {
         padding-bottom: 30px;
-
     }
 }
 
@@ -240,52 +239,46 @@ a {
 /*Inicio estilos contenedor 3*/
 .contenedor3 {
     position: relative;
-    margin-top: 55%;
+    bottom: 80px;
 }
 
-.contenedor3 .flex-container-section3 {
-    display: flex;
-    align-items: center;
-}
-
-.phone {
-    @include phone-size;
-}
-.parrafo-contenedor3 h2 {
-    @include normal-subtitulos;
-}
-.parrafo-contenedor3{
-    font-family: $normal-font-family;
-    font-size: $font-size-parrafos;
-    align-items: center;
-    @include padding-parrafo;
-//     line-height: 150%;
-}
-
-
-@media screen and (max-width: 990px) {
-    .contenedor3 {
-        position: relative;
-        margin-top: 150%;
-    }
-
-    .contenedor3 .flex-container-section3 {
+.flex-container-section3 {
     display: flex;
     flex-direction: column;
+}
+.phone {
+    max-width: 100%;   
+}
+
+.parrafo-contenedor3 h2 {
+    padding-left: 0;
+    position: relative;
+    @include subtitulos-mobile;
+}
+
+.parrafo-contenedor3 p {
+    font-family: $normal-font-family;
+    font-size: $font-size-parrafos-mobile;
+}
+
+@media screen and (min-width: 990px) {
+    .flex-container-section3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
     .phone {
-        @include phone-size-mobile;
+        margin-right: 80px;
     }
 
     .parrafo-contenedor3 h2 {
-        @include subtitulos-mobile;
+        @include normal-subtitulos;
     }
 
-    .parrafo-contenedor3 {
-        font-family: $normal-font-family;
-        font-size: $font-size-parrafos-mobile;
-        align-items: center;
-        justify-content: center;
-    }       
+    .parrafo-contenedor3 p {
+        font-size: $font-size-parrafos;
+        margin-right: 80px;
+    }    
+
 }

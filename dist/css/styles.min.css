@@ -357,70 +357,59 @@ a {
 /*Inicio estilos contenedor 3*/
 .contenedor3 {
   position: relative;
-  margin-top: 55%;
+  bottom: 80px;
 }
 
-.contenedor3 .flex-container-section3 {
+.flex-container-section3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .phone {
-  width: 457.6px;
-  height: 660px;
-  margin-right: 4.3%;
+  max-width: 100%;
 }
 
 .parrafo-contenedor3 h2 {
+  padding-left: 0;
+  position: relative;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
-  font-size: 3rem;
-  /*48px*/
+  font-size: 2.25rem;
 }
 
-.parrafo-contenedor3 {
+.parrafo-contenedor3 p {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-right: 20%;
+  font-size: 0.875rem;
 }
 
-@media screen and (max-width: 990px) {
-  .contenedor3 {
-    position: relative;
-    margin-top: 150%;
-  }
-  .contenedor3 .flex-container-section3 {
+@media screen and (min-width: 990px) {
+  .flex-container-section3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .phone {
-    width: 360px;
-    height: 519px;
-  }
-  .parrafo-contenedor3 h2 {
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-size: 2.25rem;
-  }
-  .parrafo-contenedor3 {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.875rem;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  }
+  .phone {
+    margin-right: 80px;
+  }
+  .parrafo-contenedor3 h2 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 3rem;
+    /*48px*/
+  }
+  .parrafo-contenedor3 p {
+    font-size: 1rem;
+    margin-right: 80px;
   }
 }
 
