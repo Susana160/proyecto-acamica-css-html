@@ -117,30 +117,6 @@ a {
 }
 
 
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**********************ESTILOS GENERALES MOBILE********************/
 /*Inicio estilos contenedor 2*/
 /*Caja contenedora del contenedor 2 (box)*/
@@ -218,24 +194,7 @@ a {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**********************ESTILOS GENERALES MOBILE********************/
 /*Inicio estilos contenedor 3*/
 .contenedor3 {
     position: relative;
@@ -261,6 +220,8 @@ a {
     font-size: $font-size-parrafos-mobile;
 }
 
+
+/*************ESTILOS PARA DESKTOP********************/
 @media screen and (min-width: 990px) {
     .flex-container-section3 {
         display: flex;

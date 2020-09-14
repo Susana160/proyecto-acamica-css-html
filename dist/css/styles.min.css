@@ -354,6 +354,7 @@ a {
   }
 }
 
+/**********************ESTILOS GENERALES MOBILE********************/
 /*Inicio estilos contenedor 3*/
 .contenedor3 {
   position: relative;
@@ -386,6 +387,7 @@ a {
   font-size: 0.875rem;
 }
 
+/*************ESTILOS PARA DESKTOP********************/
 @media screen and (min-width: 990px) {
   .flex-container-section3 {
     display: -webkit-box;
