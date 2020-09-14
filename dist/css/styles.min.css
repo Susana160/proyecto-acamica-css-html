@@ -168,7 +168,7 @@ a {
 }
 
 .max-width {
-  max-width: 300px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -342,7 +342,6 @@ a {
   }
   .img-iframes {
     margin: 0;
-    width: 584px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -351,6 +350,7 @@ a {
   }
   .iframes {
     padding-bottom: 30px;
+    max-width: calc(100% / 2);
   }
 }
 
@@ -546,6 +546,7 @@ a {
 }
 
 /**********************ESTILOS GENERALES MOBILE********************/
+/*Cajita de fondo "box2"*/
 .box2 {
   -webkit-clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
@@ -553,6 +554,7 @@ a {
   background-image: linear-gradient(#0000FF, #0000A3);
 }
 
+/*Inicio de flexbox contenedor 6*/
 .flex-container-section6 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,10 +568,12 @@ a {
           align-items: center;
 }
 
+/*Estilos sección*/
 .contenedor6 .parrafo3 {
   position: relative;
 }
 
+/*Estilos h2 contenedor 6*/
 .contenedor6 h2 {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 2.25rem;
@@ -578,6 +582,7 @@ a {
   text-align: center;
 }
 
+/*Estilos botón contenedor 6*/
 .segundoboton {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -588,6 +593,7 @@ a {
 }
 
 /*************ESTILOS PARA DESKTOP********************/
+/*Esilos cajita box2*/
 @media screen and (min-width: 1000px) {
   .box2 {
     -webkit-clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
@@ -595,9 +601,11 @@ a {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
     background-image: linear-gradient(#0000FF, #0000A3);
   }
+  /*Estilos generales parrafo3*/
   .contenedor6 .parrafo3 {
     position: relative;
   }
+  /**/
   .contenedor6 h2 {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-size: 3rem;

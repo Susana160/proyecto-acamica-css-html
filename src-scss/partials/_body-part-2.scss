@@ -126,21 +126,25 @@
 
 
 /**********************ESTILOS GENERALES MOBILE********************/
+/*Cajita de fondo "box2"*/
 .box2 {
     clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
     background-image: linear-gradient(#0000FF, #0000A3);
 }
 
+/*Inicio de flexbox contenedor 6*/
 .flex-container-section6 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/*Estilos sección*/
 .contenedor6 .parrafo3{
     position: relative;
 }
 
+/*Estilos h2 contenedor 6*/
 .contenedor6 h2 {
     @include subtitulos-mobile;
     color: white;
@@ -148,6 +152,7 @@
     text-align: center;
 }
 
+/*Estilos botón contenedor 6*/
 .segundoboton {
     justify-content: center;
     position: relative;
@@ -157,17 +162,19 @@
 }
 
 /*************ESTILOS PARA DESKTOP********************/
+/*Esilos cajita box2*/
 @media screen and (min-width: 1000px) {
     .box2 {
         clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
         background-image: linear-gradient(#0000FF, #0000A3);
     }
     
-
+    /*Estilos generales parrafo3*/
     .contenedor6 .parrafo3{
         position: relative;
     }
     
+    /**/
     .contenedor6 h2 {
         @include normal-subtitulos;
         color: white;
