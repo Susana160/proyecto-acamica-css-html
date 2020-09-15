@@ -168,8 +168,7 @@ a {
 }
 
 .max-width {
-  max-width: 700px;
-  margin: 0 auto;
+  margin: 16px;
 }
 
 /**********************ESTILOS GENERALES MOBILE********************/
@@ -432,6 +431,7 @@ a {
 }
 
 .img-invitadas {
+  display: inline-block;
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -554,6 +554,7 @@ a {
           clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background-image: linear-gradient(#0000FF, #0000A3);
+  margin-top: 16px;
 }
 
 /*Inicio de flexbox contenedor 6*/
