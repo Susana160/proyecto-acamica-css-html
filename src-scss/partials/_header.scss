@@ -109,3 +109,50 @@ header nav .principal-nav input:checked ~ span:nth-last-child(2) {
     color: #060A24;
     opacity: 56%;
 }
+
+@media screen and (min-width: 1000px) {
+    nav .principal-nav ul {
+        @include lista-sin-bullets;
+        }
+        
+        .clean-list li {
+            display: inline-block;
+        }
+        
+        .header {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: white;
+        }
+        
+        .header a {
+            color: white;
+        }
+        
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .principal-nav .flex-container {
+            font-family: $font-size-header-footer;
+        }
+        
+        .principal-nav ul li {
+            font-size: $normal-font-family;
+            // padding-right: 20px;
+            margin: 16px;
+        }
+        
+        .principal-nav ul li a:hover {
+            text-decoration: line-through;
+            color: $botones-font-color;
+            transition: 0.5s ease;
+        }
+        .principal-nav ul li:active {
+            text-decoration: line-through;
+            color: #060A24;
+            opacity: 56%;
+        }
+}

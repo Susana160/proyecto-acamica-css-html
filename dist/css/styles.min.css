@@ -142,6 +142,52 @@ header nav .principal-nav input:checked ~ span:nth-last-child(2) {
   opacity: 56%;
 }
 
+@media screen and (min-width: 1000px) {
+  nav .principal-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .clean-list li {
+    display: inline-block;
+  }
+  .header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+  }
+  .header a {
+    color: white;
+  }
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .principal-nav .flex-container {
+    font-family: 1rem;
+  }
+  .principal-nav ul li {
+    font-size: "IBM Plex Mono", monospace;
+    margin: 16px;
+  }
+  .principal-nav ul li a:hover {
+    text-decoration: line-through;
+    color: #00F3BB;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .principal-nav ul li:active {
+    text-decoration: line-through;
+    color: #060A24;
+    opacity: 56%;
+  }
+}
+
 /********Parte del body con los contenedores desde el 1 hasta el 3*********/
 *::before,
 *::after {
@@ -171,8 +217,8 @@ a {
   margin: 16px;
 }
 
-/**********************ESTILOS GENERALES MOBILE********************/
-/*Inicio flexbox contenedor1*/
+/*******ESTILOS PARA MOBILE********/
+/***********************************Inicio flexbox contenedor1***********************************/
 .flex-container-section1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,51 +272,7 @@ a {
   transition: 1s ease;
 }
 
-/*************ESTILOS PARA DESKTOP********************/
-@media screen and (min-width: 990px) {
-  /*Estilos del contenedor 1*/
-  .max-width {
-    max-width: 1200px;
-  }
-  /*Estilos generales contenedor 1*/
-  .contenedor1 {
-    padding-left: 100px;
-    margin-top: 120px;
-    margin-bottom: 10px;
-  }
-  /*Inicio de flexbox contenedor 1*/
-  .flex-container-section1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  /*Estilos de los elementos dentro del contenedor*/
-  /*Estilos h1*/
-  .contenedor1 h1 {
-    margin: 0;
-    font-size: 4rem;
-  }
-  /*Estilos parrafo 1 contenedor 1*/
-  .parrafo1 {
-    padding-right: 42.5%;
-    margin-bottom: 3.5%;
-    font-size: 1rem;
-    text-align: justify;
-  }
-  /*Estilos boton contenedor 1*/
-  .conoce_mas_boton {
-    font-size: 1.125rem;
-    padding: 1% 4.1%;
-    border: 0;
-  }
-}
-
-/**********************ESTILOS GENERALES MOBILE********************/
-/*Inicio estilos contenedor 2*/
+/*****************************Inicio estilos contenedor 2**************************************/
 /*Caja contenedora del contenedor 2 (box)*/
 .box1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
@@ -312,8 +314,79 @@ a {
   padding-bottom: 16px;
 }
 
-/*************ESTILOS PARA DESKTOP********************/
-@media screen and (min-width: 990px) {
+/*******************************Inicio estilos contenedor 3**********************************/
+.contenedor3 {
+  position: relative;
+  bottom: 80px;
+}
+
+.flex-container-section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.phone {
+  max-width: 100%;
+}
+
+.parrafo-contenedor3 h2 {
+  padding-left: 0;
+  position: relative;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 2.25rem;
+}
+
+.parrafo-contenedor3 p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.875rem;
+}
+
+/**************************ESTILOS PARA DESKTOP*********************************/
+@media screen and (min-width: 1000px) {
+  /*Estilos del contenedor 1*/
+  .max-width {
+    max-width: 1200px;
+  }
+  /*Estilos generales contenedor 1*/
+  .contenedor1 {
+    padding-left: 100px;
+    margin-top: 120px;
+    margin-bottom: 10px;
+  }
+  /*Inicio de flexbox contenedor 1*/
+  .flex-container-section1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /*Estilos de los elementos dentro del contenedor*/
+  /*Estilos h1*/
+  .contenedor1 h1 {
+    margin: 0;
+    font-size: 4rem;
+  }
+  /*Estilos parrafo 1 contenedor 1*/
+  .parrafo1 {
+    padding-right: 42.5%;
+    margin-bottom: 3.5%;
+    font-size: 1rem;
+    text-align: justify;
+  }
+  /*Estilos boton contenedor 1*/
+  .conoce_mas_boton {
+    font-size: 1.125rem;
+    padding: 1% 4.1%;
+    border: 0;
+  }
   /*Incio estilos contenedor 2*/
   .box1 {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
@@ -356,43 +429,6 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-/**********************ESTILOS GENERALES MOBILE********************/
-/*Inicio estilos contenedor 3*/
-.contenedor3 {
-  position: relative;
-  bottom: 80px;
-}
-
-.flex-container-section3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.phone {
-  max-width: 100%;
-}
-
-.parrafo-contenedor3 h2 {
-  padding-left: 0;
-  position: relative;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
-  font-size: 2.25rem;
-}
-
-.parrafo-contenedor3 p {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.875rem;
-}
-
-/*************ESTILOS PARA DESKTOP********************/
-@media screen and (min-width: 990px) {
   .flex-container-section3 {
     display: -webkit-box;
     display: -ms-flexbox;

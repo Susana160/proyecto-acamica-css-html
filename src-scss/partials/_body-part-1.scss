@@ -24,8 +24,8 @@ a {
     margin: 16px;
 }
 
-/**********************ESTILOS GENERALES MOBILE********************/
-/*Inicio flexbox contenedor1*/
+/*******ESTILOS PARA MOBILE********/
+/***********************************Inicio flexbox contenedor1***********************************/
 .flex-container-section1 {
     display: flex;
     flex-direction: column;
@@ -72,10 +72,70 @@ a {
     transition: 1s ease;
 }
 
-/*************ESTILOS PARA DESKTOP********************/
-@media screen and (min-width: 990px) {
-    /*Estilos del contenedor 1*/
-    .max-width {
+
+/*****************************Inicio estilos contenedor 2**************************************/
+/*Caja contenedora del contenedor 2 (box)*/
+.box1 {
+    background-image: linear-gradient(#0000FF, #0000A3);
+    padding-top: 50px;
+    padding-bottom: 150px;
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);   
+}
+
+/*Inicio flexbox contenedor 2*/
+.flex-container-section2 {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Estilos contenedor 1: h2 - iframes*/
+.episodios {
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+/*Estilos h2 contenedor 2*/
+.episodios h2 {
+    padding-left: 0;
+    position: relative;
+    @include subtitulos-mobile;
+    color: white;
+}
+
+/*Estilos iframes*/
+.img-iframes img {
+    padding-bottom: 16px;
+}
+
+/*******************************Inicio estilos contenedor 3**********************************/
+.contenedor3 {
+    position: relative;
+    bottom: 80px;
+}
+
+.flex-container-section3 {
+    display: flex;
+    flex-direction: column;
+}
+.phone {
+    max-width: 100%;   
+}
+
+.parrafo-contenedor3 h2 {
+    padding-left: 0;
+    position: relative;
+    @include subtitulos-mobile;
+}
+
+.parrafo-contenedor3 p {
+    font-family: $normal-font-family;
+    font-size: $font-size-parrafos-mobile;
+}
+
+/**************************ESTILOS PARA DESKTOP*********************************/
+@media screen and (min-width: 1000px) {
+     /*Estilos del contenedor 1*/
+     .max-width {
         max-width: 1200px;
     }
 
@@ -113,46 +173,8 @@ a {
         padding: 1% 4.1%;
         border: 0;
     }
-}
 
 
-/**********************ESTILOS GENERALES MOBILE********************/
-/*Inicio estilos contenedor 2*/
-/*Caja contenedora del contenedor 2 (box)*/
-.box1 {
-    background-image: linear-gradient(#0000FF, #0000A3);
-    padding-top: 50px;
-    padding-bottom: 150px;
-    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);   
-}
-
-/*Inicio flexbox contenedor 2*/
-.flex-container-section2 {
-    display: flex;
-    flex-direction: column;
-}
-
-/*Estilos contenedor 1: h2 - iframes*/
-.episodios {
-    max-width: 280px;
-    margin: 0 auto;
-}
-
-/*Estilos h2 contenedor 2*/
-.episodios h2 {
-    padding-left: 0;
-    position: relative;
-    @include subtitulos-mobile;
-    color: white;
-}
-
-/*Estilos iframes*/
-.img-iframes img {
-    padding-bottom: 16px;
-}
-
-/*************ESTILOS PARA DESKTOP********************/
-@media screen and (min-width: 990px) {
     /*Incio estilos contenedor 2*/
     .box1 {
         background-image: linear-gradient(#0000FF, #0000A3);
@@ -194,37 +216,8 @@ a {
         align-items: center;
         // max-width: calc(100% / 2);
     }
-}
-
-/**********************ESTILOS GENERALES MOBILE********************/
-/*Inicio estilos contenedor 3*/
-.contenedor3 {
-    position: relative;
-    bottom: 80px;
-}
-
-.flex-container-section3 {
-    display: flex;
-    flex-direction: column;
-}
-.phone {
-    max-width: 100%;   
-}
-
-.parrafo-contenedor3 h2 {
-    padding-left: 0;
-    position: relative;
-    @include subtitulos-mobile;
-}
-
-.parrafo-contenedor3 p {
-    font-family: $normal-font-family;
-    font-size: $font-size-parrafos-mobile;
-}
 
 
-/*************ESTILOS PARA DESKTOP********************/
-@media screen and (min-width: 990px) {
     .flex-container-section3 {
         display: flex;
         flex-direction: row;
@@ -243,5 +236,4 @@ a {
         font-size: $font-size-parrafos;
         margin-right: 80px;
     }    
-
 }
