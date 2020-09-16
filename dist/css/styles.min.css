@@ -587,12 +587,10 @@ a {
 
 /*Estilos botón contenedor 6*/
 .segundoboton {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
   padding-top: 3%;
   padding-bottom: 3%;
+  text-align: center;
 }
 
 /*************ESTILOS PARA DESKTOP********************/
@@ -620,6 +618,7 @@ a {
     bottom: 30px;
     padding-top: 3%;
     padding-bottom: 3%;
+    text-align: center;
   }
 }
 

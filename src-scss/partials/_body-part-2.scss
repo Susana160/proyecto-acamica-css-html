@@ -156,11 +156,10 @@
 
 /*Estilos botón contenedor 6*/
 .segundoboton {
-    justify-content: center;
-    position: relative;
-    
+    position: relative;  
     padding-top: 3%;
     padding-bottom: 3%;
+    text-align: center;
 }
 
 /*************ESTILOS PARA DESKTOP********************/
@@ -187,6 +186,7 @@
         bottom: 30px;
         padding-top: 3%;
         padding-bottom: 3%;
+        text-align: center;
     }
 }
 
