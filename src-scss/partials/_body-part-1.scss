@@ -184,12 +184,15 @@ a {
         margin: 0;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
     
 
     .iframes {
         padding-bottom: 30px;
-        max-width: calc(100% / 2);
+        max-width: 45%;
+        align-items: center;
+        // max-width: calc(100% / 2);
     }
 }
 
