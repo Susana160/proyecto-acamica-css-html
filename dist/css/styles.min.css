@@ -348,13 +348,14 @@ a {
 
 /**************************ESTILOS PARA DESKTOP*********************************/
 @media screen and (min-width: 1000px) {
-  /*Estilos del contenedor 1*/
   .max-width {
     max-width: 1200px;
+    min-width: 1000px;
+    margin: 0 auto;
   }
-  /*Estilos generales contenedor 1*/
+  /***********Estilos generales contenedor 1***************/
   .contenedor1 {
-    padding-left: 100px;
+    padding-left: 200px;
     margin-top: 120px;
     margin-bottom: 10px;
   }
@@ -387,31 +388,34 @@ a {
     padding: 1% 4.1%;
     border: 0;
   }
-  /*Incio estilos contenedor 2*/
+  /**************Incio estilos contenedor 2****************/
+  /*Fondo contenedor "box1"*/
   .box1 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
-    background-image: linear-gradient(#0000FF, #0000A3);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     -webkit-clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
             clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
     margin-left: 0;
   }
+  /*Estilos contenedor 2*/
   .contenedor2 {
     position: relative;
     margin-top: 3%;
   }
-  /*Inicio flexbox para el contenedor*/
+  /*Estilos generales contenedor 2*/
   .episodios {
     max-width: 1440px;
     margin: 0 auto;
   }
+  /*Estilos h2 contenedor 2*/
   .episodios h2 {
     position: relative;
-    padding-left: 200px;
+    padding-left: calc(200px - 15px);
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-size: 3rem;
     /*48px*/
     color: white;
   }
+  /*Inicio de flexbox para los iframes (se llama img-iframes, porque antes eran imagenes)*/
   .img-iframes {
     margin: 0;
     display: -webkit-box;
@@ -422,6 +426,7 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  /*Estilos especificos de los iframes*/
   .iframes {
     padding-bottom: 30px;
     max-width: 45%;
@@ -429,6 +434,8 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
+  /*************Inicio estilos contenedor 3**************/
+  /*Inicio de flexbox, se le pone flex-direction: row; para poder revertir el estilo column del mobile*/
   .flex-container-section3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -441,17 +448,29 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
+  /*Estilos img phone*/
   .phone {
-    margin-right: 80px;
+    position: relative;
+    width: 450px;
+    height: 660px;
+    padding-left: calc(200px - 60px);
+    margin-right: 30px;
   }
+  /*Estilos generales del h2 y el p del contenedor 3*/
+  .parrafo-contenedor3 {
+    position: absolute;
+    padding-right: calc(300px - 30px);
+    padding-left: 720px;
+  }
+  /*Estilos especificos del h2 contenedor 3*/
   .parrafo-contenedor3 h2 {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-size: 3rem;
     /*48px*/
   }
+  /*Estilos especificos del p contenedor 3*/
   .parrafo-contenedor3 p {
     font-size: 1rem;
-    margin-right: 80px;
   }
 }
 
@@ -489,13 +508,14 @@ a {
   /*Estilos generales contenedor 4*/
   .max-width {
     max-width: 1440px;
+    min-width: 1000px;
   }
   .contenedor4 {
     margin-top: 1.6%;
   }
   /*Estilos h2 contendor 4*/
   .contenedor4 h2 {
-    padding-left: 200px;
+    padding-left: calc(200px - 15px);
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-size: 3rem;
     /*48px*/
@@ -543,7 +563,7 @@ a {
 
 /*Estilos h2 contenedor 5*/
 .contenedor5 h2 {
-  padding-left: 200px;
+  padding-left: calc(200px - 15px);
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 3rem;
   /*48px*/

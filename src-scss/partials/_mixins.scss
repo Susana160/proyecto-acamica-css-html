@@ -39,7 +39,7 @@
 }
 
 @mixin padding-left-subtitulos {
-    padding-left: 200px;
+    padding-left: calc(200px - 15px);
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-size: 3rem; /*48px*/
 }
