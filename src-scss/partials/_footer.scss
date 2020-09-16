@@ -1,25 +1,33 @@
+/*Puse primero los estilos para desktop ya que era mas fácil, sencillo y menos complicado confirgurarlo para mobile*/
+/*Inicio flexbox*/
 .footer {    
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/*Estilos especificos del div del footer (contiene el p)*/
 .footer div {
     font-family: $normal-font-family;
 }
 
+/*Estilos aparte del resto de las redes sociales para configurarlos solo a ellos*/
 .redesSociales {
     display: flex;
     justify-content: space-between;
 }
 
+/*Estilo especifico por cada span de las redes sociales*/
 .cadaRedSocial {
     padding-right: 50px;
 }
+
+/*Estilo único para el last child del último icono de las redes sociales*/
 .cadaRedSocial:nth-last-child(1) {
     padding: 0;
 }
 
+/*Media querie para configuracion de flexbox*/
 @media screen and (max-width: 1000px) {
     .footer {
         flex-direction: column;
