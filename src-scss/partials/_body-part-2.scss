@@ -1,15 +1,18 @@
 /*Parte del body con los contenedores desde el 4 hasta el 6*/
+/*En esta parte del body, no organicé todo en una sola media querie ni para desktop ni para mobile, ya que hay container que empiezan por first mobile mientras que otros empiezan por desktop. Dividí los containers con las media queries correspondientes, dejo en cada uno especifciación del cómo está organizado*/
 
-/**********************ESTILOS GENERALES MOBILE********************/
-/*Inicio de estilos contenedor 4*/
+
+/******************************Inicio de estilos contenedor 4 PARA MOBILE******************************/
+/*Estilos para mobile contenedor 4*/
+
 /*Estilos h2 contenedor 4*/
 .contenedor4 h2 {
     padding-left: 0;
     @include subtitulos-mobile;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
+/*Estilos img-invitadas con flexbox contenedor 4*/
 .img-invitadas {
     display: inline-block;
     max-width: 100%;
@@ -18,49 +21,39 @@
     justify-content: center;
 }
 
-/*************ESTILOS PARA DESKTOP********************/
+/*Estilos especificos de las img contenedor 4*/
+.img-invitadas img {
+    width: 320px;
+    height: 243px;
+}
+
+/***********Estilos PARA DESKTOP contenedor 4 dentro de una media querie*************/
 @media screen and (min-width: 1000px) {
-    /*Estilos generales contenedor 4*/
     .max-width {
         max-width: 1440px;
         min-width: 1000px;
     }
+
+    /*Estilos generales contenedor 4*/
     .contenedor4 {
         margin-top: 1.6%;
     }
-
-    /*Estilos h2 contendor 4*/
+    
+    /*Estilos h2 contendor 4, le puse flexbox para poder desactivar el text-align: center de los estilos mobile*/
     .contenedor4 h2 {
         @include padding-left-subtitulos;
+        display: flex;
         justify-content: flex-start;
     }
-    
-    /*Max width img contenedor 4*/
+        
+    /*Tamaño img contenedor 4*/
     .contenedor4 img {
         @include tamaño-imgages-invitadas;
     }
-    
-    /*Estilos imagenes contenedor 4*/
-    .img-invitadas {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 }
 
-
-    
-
-
-
-
-
-
-
-
-
-/*************ESTILOS PARA DESKTOP********************/
-// /*Incio estilos contenedor 5*/
+/******************************Inicio de estilos PARA DESKTOP contenedor 5******************************/
+/*Estilo general contenedor 5*/
 .contenedor5 {
     margin-bottom: 10%;
 }
@@ -72,8 +65,8 @@
     padding: 0 13.9%;
 }
 
+/*Estilo especifico con flexbox contenedor 5*/
 .contenedor5 .flex-container-section5 {
-    // display: flex;
     flex-wrap: wrap;
 }   
 
@@ -84,7 +77,6 @@
 
 /*Alineación de assets con los p*/
 .contenedor5 div .assets {
-    // box-sizing: border-box;
     text-align: center;
 }
 
@@ -95,9 +87,9 @@
     text-align: center;
 }
 
-/**********************ESTILOS GENERALES MOBILE********************/
-/*Configuración flexbox contenedor 5*/
+/***********Estilos PARA MOBILE contenedor 5 dentro de una media querie*************/
 @media screen and (max-width: 990px) {
+    /*Configuración flexbox contenedor 5*/
     .contenedor5 .flex-container-section5 {
         flex-direction: column;
     } 
@@ -105,8 +97,7 @@
     /*Estilos h2 contenedor 5*/
     .contenedor5 h2{
         padding-left: 0;
-        display: flex;
-        justify-content: center;
+        text-align: center;
         @include subtitulos-mobile
     }
 
@@ -116,22 +107,11 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/**********************ESTILOS GENERALES MOBILE********************/
+/******************************Inicio de estilos contenedor 6 PARA MOBILE******************************/
 /*Cajita de fondo "box2"*/
 .box2 {
     clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
-    background-image: linear-gradient(#0000FF, #0000A3);
+    background-image: $box;
     margin-top: 16px;
 }
 
@@ -142,7 +122,7 @@
     align-items: center;
 }
 
-/*Estilos sección*/
+/*Estilos sección contenedor 6*/
 .contenedor6 .parrafo3{
     position: relative;
 }
@@ -163,12 +143,12 @@
     text-align: center;
 }
 
-/*************ESTILOS PARA DESKTOP********************/
-/*Esilos cajita box2*/
+/***********Estilos PARA DESKTOP contenedor 4 dentro de una media querie*************/
 @media screen and (min-width: 1000px) {
+    /*Cajita de fondo "box2"*/
     .box2 {
         clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
-        background-image: linear-gradient(#0000FF, #0000A3);
+        background-image: $box;
     }
     
     /*Estilos generales parrafo3*/
@@ -176,23 +156,19 @@
         position: relative;
     }
     
-    /**/
+    /*Estilos h2 contenedor 6*/
     .contenedor6 h2 {
+        position: relative;
+        top: 100px;
         @include normal-subtitulos;
         color: white;
     }
     
+    /*Estilos segundo botón contenedor 6*/
     .segundoboton {
         position: relative;
-        bottom: 30px;
-        padding-top: 3%;
-        padding-bottom: 3%;
+        padding-top: 2%;
+        padding-bottom: 2%;
         text-align: center;
     }
 }
-
-
-
-
-
-            
