@@ -10,6 +10,8 @@
 /*14px*/
 /*tamaño max-width*/
 /*Estilos particulares*/
+/*POR FAVOR APRECIAR ESTE MNEÚ, LO LOGRÉ DESPUÉS DE LLORAR Y PENSAR EN TIRAR LA TOALLA ♥✰ツ*/
+/*Estilo general tanto para el menú mobile y desktop*/
 nav .principal-nav ul {
   padding: 0;
   margin: 0;
@@ -17,12 +19,14 @@ nav .principal-nav ul {
 }
 
 /******MENU HAMBURGUESA*******/
+/*Media querie para mobile para que no afecte después los estilos del menú desktop*/
 @media screen and (max-width: 1000px) {
   nav .principal-nav ul {
     display: none;
   }
 }
 
+/*Estilos para decirle qué hacer al menú cuándo esté en estado checked*/
 .principal-nav input:checked ~ ul {
   background-color: blue;
   display: -webkit-box;
@@ -43,6 +47,7 @@ nav .principal-nav ul {
   -webkit-transition: height 0.5s ease-in-out;
 }
 
+/*Estilos especificos para el input*/
 header nav .principal-nav input {
   display: block;
   width: 40px;
@@ -52,6 +57,7 @@ header nav .principal-nav input {
   position: absolute;
 }
 
+/*Estilos especificos para el span*/
 header nav .principal-nav span {
   display: block;
   width: 25px;
@@ -68,6 +74,7 @@ header nav .principal-nav span {
   transition: transform 0.5s ease, opacity 0.55s ease, -webkit-transform 0.5s ease;
 }
 
+/*Configuración general para el menú 🍔*/
 header nav .principal-nav span:first-child {
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
@@ -116,6 +123,7 @@ header nav .principal-nav input:checked ~ span:nth-last-child(2) {
   color: white;
 }
 
+/*Inicio de flexbox*/
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,6 +142,7 @@ header nav .principal-nav input:checked ~ span:nth-last-child(2) {
   margin: 16px;
 }
 
+/*Hover para el menú*/
 .principal-nav ul li a:hover {
   text-decoration: line-through;
   color: #00F3BB;
@@ -148,12 +157,15 @@ header nav .principal-nav input:checked ~ span:nth-last-child(2) {
 }
 
 @media screen and (min-width: 1000px) {
+  /*Estilo para enconder el input*/
   header nav .principal-nav input {
     display: none;
   }
+  /*Estilo para enconder el span*/
   header nav .principal-nav span {
     display: none;
   }
+  /*Cambio de colores para que se vea*/
   .header {
     color: #060A24;
   }
