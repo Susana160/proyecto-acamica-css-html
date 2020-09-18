@@ -123,14 +123,18 @@ header nav .principal-nav input:checked ~ span:nth-last-child(2) {
   color: white;
 }
 
+.logo {
+  position: absolute;
+}
+
 /*Inicio de flexbox*/
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .principal-nav .flex-container {

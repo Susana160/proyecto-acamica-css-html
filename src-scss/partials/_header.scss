@@ -97,11 +97,17 @@ header nav .principal-nav input:checked ~ span:nth-last-child(2) {
     color: white;
 }
 
+.logo {
+    position: absolute;
+}
+
 /*Inicio de flexbox*/
+
 .flex-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
+
 
 .principal-nav .flex-container {
     font-family: $font-size-header-footer;
