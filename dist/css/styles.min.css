@@ -14,10 +14,15 @@ nav .principal-nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: none;
 }
 
 /******MENU HAMBURGUESA*******/
+@media screen and (max-width: 1000px) {
+  nav .principal-nav ul {
+    display: none;
+  }
+}
+
 .principal-nav input:checked ~ ul {
   background-color: blue;
   display: -webkit-box;
@@ -93,7 +98,7 @@ header nav .principal-nav input:checked ~ span:nth-last-child(2) {
 
 /******ESTILOS GENERALES HEADER********/
 .principal-nav input ul {
-  display: none;
+  display: block;
 }
 
 .clean-list li {
@@ -143,48 +148,17 @@ header nav .principal-nav input:checked ~ span:nth-last-child(2) {
 }
 
 @media screen and (min-width: 1000px) {
-  nav .principal-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  header nav .principal-nav input {
+    display: none;
   }
-  .clean-list li {
-    display: inline-block;
+  header nav .principal-nav span {
+    display: none;
   }
   .header {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    color: white;
+    color: #060A24;
   }
   .header a {
-    color: white;
-  }
-  .flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .principal-nav .flex-container {
-    font-family: 1rem;
-  }
-  .principal-nav ul li {
-    font-size: "IBM Plex Mono", monospace;
-    margin: 16px;
-  }
-  .principal-nav ul li a:hover {
-    text-decoration: line-through;
-    color: #00F3BB;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
-  }
-  .principal-nav ul li:active {
-    text-decoration: line-through;
     color: #060A24;
-    opacity: 56%;
   }
 }
 
