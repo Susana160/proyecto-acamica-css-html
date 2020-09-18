@@ -281,12 +281,6 @@ a {
           flex-direction: column;
 }
 
-/*Estilos contenedor 1: h2 - iframes*/
-.episodios {
-  max-width: 280px;
-  margin: 0 auto;
-}
-
 /*Estilos h2 contenedor 2*/
 .episodios h2 {
   padding-left: 0;
