@@ -110,11 +110,11 @@ header nav .principal-nav input:checked ~ span:nth-last-child(2) {
 
 
 .principal-nav .flex-container {
-    font-family: $font-size-header-footer;
+    font-size: $font-size-header-footer;
 }
 
 .principal-nav ul li {
-    font-size: $normal-font-family;
+    font-family: $normal-font-family;
     // padding-right: 20px;
     margin: 16px;
 }

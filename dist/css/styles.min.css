@@ -138,11 +138,11 @@ header nav .principal-nav input:checked ~ span:nth-last-child(2) {
 }
 
 .principal-nav .flex-container {
-  font-family: 1rem;
+  font-size: 1rem;
 }
 
 .principal-nav ul li {
-  font-size: "IBM Plex Mono", monospace;
+  font-family: "IBM Plex Mono", monospace;
   margin: 16px;
 }
 
